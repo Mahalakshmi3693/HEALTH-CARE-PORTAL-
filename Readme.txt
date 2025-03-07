@@ -1,74 +1,72 @@
-HEALTH CARE PORTAL
-Description:
-This health care portal is an integrated web-based platform that connects patients, doctors and pharmacies to streamline healthcare delivery. It offers secure access to personal medical history and appointment scheduling. 
-This project is developed to improve patient outcomes, streamline healthcare delivery and increase overall efficiency of health care services.
+# Health Care Portal
 
-The primary goal of a healthcare portal is to empower the patients with greater control over their health information and access to care.
+## Description
+The **Health Care Portal** is an integrated web-based platform that connects patients, doctors, and pharmacies to streamline healthcare delivery. It provides secure access to personal medical history and enables appointment scheduling. This project aims to improve patient outcomes, enhance efficiency, and modernize healthcare services by giving users greater control over their health information and access to care.
 
-What application does?
-In this portal the patients can share their medical records, they can schedule doctor appointments from the convenience of their homes. 
-Health care portals are a vital component of modern healthcare systems as it provides user-friendly and secure platform to access and manage healthcare information to the patients, doctors and an admin.
+## Features
+- Secure access to personal medical history
+- Appointment scheduling for patients
+- Medical record sharing between patients and doctors
+- User authentication for patients, doctors, and admins
+- Improved healthcare service management
 
-Technologies Used: 
+## Technologies Used
+### **Frontend (React Native)**
+- **React Native CLI or Expo** – Framework for building mobile applications
+- **Node.js** – Required for JavaScript runtime and npm package management
+- **npm** – Package manager for installing dependencies
+- **Visual Studio Code** – Code editor for writing React Native code
 
-We are working on a project - Health Care Portal that involved React Native for the front end, Java for the backend, and PostgreSQL as the database, andwe used a set of technologies and tools to facilitate development, testing, and deployment. Here's a list of common technologies and tools used:
-For React Native (Frontend):
-1.React Native CLI or Expo:
-2.Node.js:
-　　　　Required for running JavaScript server-side and using tools like npm
-3.npm
-　　　　Package managers to install and manage dependencies for the React Native project.
-4.Visual Studio Code:
-　　　　A code editor or integrated development environment (IDE) for writing and editing React Native code.
-　　　　
-For Java (Backend):
-1.Spring Boot:
-　　　　A framework for building Java-based enterprise applications. It simplifies the development and deployment of Java applications.
-2.Maven or Gradle:
-　　　　Build tools for managing and building Java projects.
-3.PostgreSQL JDBC Driver:
-　　　　Enables Java applications to connect to a PostgreSQL database.
-4.Hibernate:
-　　　　Object-relational mapping (ORM) framework for simplifying database interactions.
-5.Spring Data JPA:
-　　　　Part of the Spring Data project, it simplifies data access with JPA (Java Persistence API) and provides repository support.
-6.Spring Security:
-　　　　For handling authentication and authorization in your Java backend.
-7.JUnit and Mockito:
-　　　　Testing frameworks for writing unit tests for Java code.
-　　　　
-For PostgreSQL (Database):
-PostgreSQL Database:
-　　　　The open-source relational database management system.
-pgAdmin (optional):
-　　　　Graphical administration and management tool for PostgreSQL.
-Installation and Setup Instructions:
-1.Set up a react environment:
+### **Backend (Java with Spring Boot)**
+- **Spring Boot** – Framework for building Java-based enterprise applications
+- **Maven or Gradle** – Build tools for managing Java projects
+- **PostgreSQL JDBC Driver** – Enables Java applications to connect to PostgreSQL
+- **Hibernate** – ORM framework for database interactions
+- **Spring Data JPA** – Simplifies data access with JPA
+- **Spring Security** – Manages authentication and authorization
+- **JUnit & Mockito** – Testing frameworks for unit testing
 
-Install npm and Node.js from https://nodejs.org/en
-Create a React application by using create-react-app.
-Run this command to create a React application named my-react-app: npm create-react-app my-react-app
-Run this command to move to the my-react-app directory: cd my-react-app
-Run this command to run the React application my-react-app: npm start
-A new browser window will pop up with your newly created React App! If not, open your browser and type localhost:3000 in the address bar.
+### **Database (PostgreSQL)**
+- **PostgreSQL Database** – Open-source relational database management system
+- **pgAdmin** (Optional) – Graphical tool for managing PostgreSQL
 
-2.Create and Setup Spring Boot Project in Eclipse IDE
+## Installation & Setup
+### **1. Set Up React Native Environment**
+1. Install Node.js and npm from [Node.js official site](https://nodejs.org/en)
+2. Create a React Native project:
+   ```sh
+   npx create-react-app my-react-app
+   ```
+3. Navigate to the project directory:
+   ```sh
+   cd my-react-app
+   ```
+4. Start the React app:
+   ```sh
+   npm start
+   ```
+5. Open a browser and go to `localhost:3000` to view the app.
 
-Install Eclipse IDE for Enterprise Java and Web Developer
-Create a Spring Boot Project in Spring Initializr
-Import Spring Boot Project in Eclipse IDE
-Search “maven” and choose Existing Maven Project
-Choose Next
-Click on the Browse button and select the extracted zip 
-Click on the Finish button and we are done creating the Spring Boot project
+### **2. Set Up Spring Boot Project in Eclipse IDE**
+1. Install Eclipse IDE for Enterprise Java and Web Development
+2. Create a Spring Boot project using [Spring Initializr](https://start.spring.io/)
+3. Import the Spring Boot project into Eclipse:
+   - Search for "Maven"
+   - Choose **Existing Maven Project**
+   - Click **Next**
+   - Browse and select the extracted project folder
+   - Click **Finish**
 
-3.Setup PostgreSQL DATABASE using pgAdmin
+### **3. Set Up PostgreSQL Database Using pgAdmin**
+1. Log in to PostgreSQL using **pgAdmin**
+2. Right-click **Databases** and select **Create > Database**
+3. Enter the database name and select an owner
+4. Click **SQL** tab to view the SQL statement
+5. Click **Save** to create the database
+6. Alternatively, use SQL command:
+   ```sql
+   CREATE DATABASE healthcare_db;
+   ```
 
-First, log in to the PostgreSQL database server using pgAdmin.
-Second, right-click the Databases node and select Create > Database. It will show a dialog for you to enter detailed information on the new database.
-Third, enter the name of the database and select an owner in the general tab.
-Fourth, click the SQL tab to view the generated SQL statement that will execute.
-Finally, click the Save button to create the sampledb database. You will see the sampledb listed on the database lis
-Use the CREATE DATABASE statement to create a new database.
-CONCLUSION:
-A healthcare portal is like a helpful website or app for managing your health. It can make things easier by letting you check your information, make appointments, and talk to doctors. But, it needs to be easy for everyone to use, keep your info safe, and get updated to stay helpful. If done right, it can be a great tool for improving healthcare.
+## Conclusion
+A healthcare portal is a valuable tool for managing healthcare efficiently. It enables users to securely access medical records, schedule appointments, and communicate with healthcare providers. Ensuring ease of use, security, and continuous updates can make the portal an essential asset in modern healthcare systems.
